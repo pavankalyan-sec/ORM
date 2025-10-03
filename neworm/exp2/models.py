@@ -5,6 +5,7 @@ class car_inventory(models.Model):
     car_colour=models.CharField(max_length=100)
     car_model=models.CharField(max_length=100)
     car_price=models.IntegerField()
+    
     def __str__(self):
         return self.car_name
 class carAdmin(admin.ModelAdmin):
